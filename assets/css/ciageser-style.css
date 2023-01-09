@@ -1,0 +1,730 @@
+/*!
+ * Base Bootstrap 
+ * Copyright 2019 Ciageser
+ */
+
+ /*
+html {
+  position: relative;
+  min-height: 100%;
+}
+*/
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  padding-top: 105px;
+  color:#595959;
+}
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-default .navbar-toggle {
+    background-color: black;
+}
+
+.navbar {
+	padding:0px;
+	top:24px;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;	
+}
+.navbar-nav .hidden a.active, .navbar-nav .hidden a.active:hover, .navbar-nav .hidden a.active:focus {
+    background-color: white;
+}
+.navbar-nav a.active, .navbar-nav a.active:hover, .navbar-nav a.active:focus {
+    color: #333;
+    background-color: #ddd;
+}
+.nav-link {
+    padding: 1rem 1rem;
+}
+.top-nav-collapse #ciageser-logo1,
+ #ciageser-logo2 {
+    display:none;
+}
+.top-nav-collapse #ciageser-logo2 {
+    display:block !important;
+}
+
+.navbar-toggler {
+    border: 1px solid #666;
+}
+
+#otras-habilitaciones {
+    border-left:1px solid #999;
+}
+
+.navbar-toggler-icon {
+    background: url("../img/ciageser-icon-smarth-bg.png") center center no-repeat;
+}
+
+.nav-tabs .nav-link.active {
+    color: #575757 !important;
+}
+
+
+/********************************/
+/*          Colors  			*/
+/********************************/
+
+
+.background-saneamiento { background:#54ab26; }
+.background-obras { background:#a4c408; }
+.background-logistica { background:#0086cb; }
+
+.font-color-saneamiento { color:#54ab26; }
+.font-color-obras { color:#a4c408; }
+.font-color-logistica { color:#0086cb; }
+
+
+/********************************/
+/*          Carousel  			*/
+/********************************/
+.carousel-item {
+  height: 65vh;
+  min-height: 500px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.carousel-indicators {
+    bottom: 10%;
+}
+
+/********************************/
+/*          Top     			*/
+/********************************/
+
+#top-bar  {
+    background: #575757;
+}
+
+#top-bar  p {
+    color:white;
+    padding: 4px 0px;
+	font-size:.85em;
+    margin: 0px 15px 0px 0px;	
+}
+
+
+/********************************/
+/*  Ciagaser-carpeta-servicios	*/
+/********************************/
+#Ciagaser-carpeta-servicios {
+    background: transparent url("../img/ciageser-fondo-01.jpg") top center no-repeat fixed;
+    position: relative;
+	padding:90px 0px;
+}
+#Ciagaser-carpeta-servicios h1,
+#Ciagaser-carpeta-servicios p{
+    color:white;
+}
+#Ciagaser-carpeta-servicios h1 {
+    margin-bottom:40px;
+}
+
+/********************************/
+/*  Buton						*/
+/********************************/
+.btn-success,
+.servicios-info .btn-success:hover, .servicios-info .btn-success:focus, .servicios-info .btn-success:active {
+   background-color: #54ab26;
+   border-color: #54ab26;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open>.dropdown-toggle.btn-success {
+   background-color: #215f00;
+   border-color: #1d5300;
+}
+
+.servicios-info .btn-success {
+   background-color: #aaa;
+   border-color: #aaa;
+   border-radius: 2.5rem;
+   font-size:30px;   
+   line-height:100%;
+}
+
+/* logistica */
+#logistica .btn-success:hover, #logistica .btn-success:focus, #logistica .btn-success:active, 
+.modal.logistica-modal .btn-success:hover, .modal.logistica-modal .btn-success:active, .modal.logistica-modal .btn-success:focus {
+   background-color: #0086cb;
+   border-color: #0086cb;
+}
+
+/* obras */
+#obras .btn-success:hover, #obras .btn-success:focus, #obras .btn-success:active,
+.modal.obras-modal .btn-success:hover, .modal.obras-modal .btn-success:active, .modal.obras-modal .btn-success:focus  {
+   background-color: #a4c408;
+   border-color: #a4c408;
+}
+
+/* modal */
+.modal .btn-success, .modal .btn-success:active, .modal .btn-success:focus {
+    background-color: #aaa;
+    border-color: #aaa;
+}
+.modal .btn-success:hover {
+   background-color: #54ab26;
+   border-color: #54ab26;
+}
+
+
+
+/********************************/
+/*  Footer						*/
+/********************************/
+#footer {
+    padding: 50px 0px 0px;
+    background-color: #262626;
+}
+
+#footer ul#footer-menu li {
+    text-align: left;
+    padding-left: 15px;
+    border-bottom: 1px solid #666666;
+}
+
+#footer h5 {
+    color: #fff;
+	margin-bottom:25px;
+	padding-bottom:15px;
+	border-bottom:1px solid #333;
+}
+
+#footer li a {
+    color: #999999;
+	padding: 8px 0;
+	display:block;
+}
+#footer li a:hover {
+    color: #ffffff;
+	text-decoration:none;
+}
+#footer li {
+    color: white;
+}
+
+#footer-copyright {
+    /*padding: 5px 0px;*/
+    background-color: #000000;
+	color: #999999;
+	font-size:.8em;
+}
+/*
+#footer-copyright p {
+    margin: 4px 0px;
+}
+
+*/
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+	z-index:1000;
+}
+
+
+
+
+
+/********************************/
+/*  Glyphicon Fas			    	*/
+/********************************/
+#contacto .fas {
+    margin: 30px 0px 15px;
+    font-size: 30px;
+	color:#999;
+    background: white;
+    padding: 30px;
+    border-radius: 80px;
+}
+
+.telefonos-contacto-seccion .fas {
+    font-size: 25px;
+	color:#bababa;
+	margin-bottom:15px;
+}
+
+.telefonos-contacto-seccion  {
+    padding: 30px 0px;
+}
+.telefonos-contacto-seccion  p {
+    font-size:1.2em;
+}
+
+.telefonos-contacto-seccion  h4 {
+    font-size:1.5em;
+	font-weight:normal;
+}
+
+/********************************/
+/*  Ciageser "valorando el futuro" */
+/********************************/
+
+.ciageser-seccion {
+    background: transparent url("../img/ciageser-info-021.jpg") top center no-repeat fixed;
+    position: relative;
+	padding:80px 0px;
+}
+.ciageser-seccion h1 {
+    color:white;
+}
+
+/*  Fondo negro transparente   	*/
+.background-black-transparent {
+    background-color: #000000;
+    opacity: 0.6;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+
+.Ciagaser-carpeta-servicios {
+    background: transparent url(../img/ciageser-info-021.jpg) top left no-repeat fixed;
+    position: relative;
+    padding: 80px 0px;
+}
+
+/********************************/
+/*  Servicios  					*/
+/********************************/
+.servicios-inicio-seccion h1 {
+	margin-bottom:50px;
+	font-weight:normal;
+}
+
+.servicios-inicio-seccion {
+	padding:80px 0px;
+}
+
+.servicios-inicio-seccion img{
+	margin:auto;
+	width:40%;
+}
+
+.servicios-inicio-seccion p {
+	font-size:1.2em;
+	margin:30px 0px;
+}
+
+.servicios-inicio-seccion .saneamiento-info h3{
+    padding-bottom: 30px;
+    border-bottom: 10px solid #54ab26;
+}
+.servicios-inicio-seccion .logistica-info h3{
+    padding-bottom: 30px;
+    border-bottom: 10px solid #0086cb;
+}
+.servicios-inicio-seccion .obras-info h3{
+    padding-bottom: 30px;
+    border-bottom: 10px solid #a4c408;
+}
+.bg-saneamiento img {
+    border-top:10px solid #54ab26;
+	width:100%;
+}
+.bg-saneamiento h6 {
+    background-color:#54ab26;
+	padding-bottom:15px;
+	padding-top:15px !important;
+	color:white;
+	margin-bottom:45px;
+}
+
+#saneamiento .container  h1{
+    border-top:20px solid #54ab26;
+	padding-top:40px;	
+}
+
+.bg-logistica img {
+    border-top:10px solid #0086cb;
+	width:100%;
+}
+.bg-logistica h6 {
+    background-color:#0086cb;
+	padding-bottom:15px;
+	padding-top:15px !important;
+	color:white;
+}
+#logistica .container  h1{
+    border-top:20px solid #0086cb;
+	padding-top:40px;	
+}
+.bg-obras h6 {
+    background-color:#a4c408;
+	padding-bottom:15px;
+	padding-top:15px !important;
+	color:black;
+	}
+.bg-obras img {
+    border-top:10px solid #a4c408;
+	width:100%;
+}
+#obras .container h1 {
+    border-top:20px solid #a4c408;
+	padding-top:40px;
+}
+#gestion-de-residuos.servicios-info {
+	padding-top:0px;
+}
+
+#gestion-de-residuos.servicios-info h1 {
+	padding-top:0px;
+}
+
+.servicios-info h1,
+.habilitaciones-info h1,
+.clientes-info h1,
+.contact-section h1 {
+	padding:20px 0px 10px 0px;
+	font-weight:normal;
+}
+/*
+.servicios-info h1,
+.servicios-info h4 {
+	color:white;
+}
+*/
+.servicios-info,
+.clientes-info {
+	border-top:1px solid #ccc;
+}
+
+.servicios-info,
+.habilitaciones-info,
+.clientes-info {
+	padding:60px 0px;
+}
+
+.servicios-info .thumbnail{
+	background-color:transparent;
+	border: none;
+}
+
+.no-padding [class*="col-"] {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+  }
+
+.carousel-gallery-info {
+	padding:60px 0px 20px;
+}
+
+#servicios{
+	background-color:#efefef;
+}
+
+#residuos-solidos-urbanos .nav-tabs>li>a {
+    color: #54ab26;
+}
+
+#residuos-solidos-urbanos .nav-tabs>li.active>a {
+    color: #000;
+}
+.alert-success /*,
+#residuos-solidos-urbanos .alert-success*/ {
+    background-color: #54ab26;
+    border-color: #54ab26;
+	color:white;
+}
+
+.alert-info {
+    color: white;
+    background-color: #0086cb;
+    border-color: #0086cb;
+}
+
+#transporte-cargas-generales.alert-info {
+    background-color: #0086cb;
+    border-color: #0086cb;
+}
+
+.servicios-inicio-seccion .saneamiento-info h5{
+    padding-bottom: 20px;
+    border-bottom: 10px solid #54ab26;
+}
+.servicios-inicio-seccion .logistica-info h5{
+    padding-bottom: 20px;
+    border-bottom: 10px solid #0086cb;
+}
+.servicios-inicio-seccion .obras-info h5 {
+    padding-bottom: 20px;
+    border-bottom: 10px solid #a4c408;
+}
+
+/********************************/
+/*  toTopBtn					*/
+/********************************/
+.scroll {
+    color: #fff;
+    margin-top: 100px
+}
+
+#toTopBtn {
+    position: fixed;
+    bottom: 26px;
+    right: 39px;
+    z-index: 98;
+    padding: 21px;
+    background-color: hsla(5, 76%, 62%, .8)
+}
+
+.cd-top--fade-out {
+    opacity: .5
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1
+}
+
+.js .cd-top {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s, visibility .3s, background-color .3s
+}
+
+.cd-top {
+    position: fixed;
+    bottom: 20px;
+    bottom: var(--cd-back-to-top-margin);
+    right: 20px;
+    right: var(--cd-back-to-top-margin);
+    display: inline-block;
+    height: 40px;
+    height: var(--cd-back-to-top-size);
+    width: 40px;
+    width: var(--cd-back-to-top-size);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
+    background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
+    background-color: hsla(5, 76%, 62%, .8);
+    background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8)
+}
+/*
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+}
+*/
+
+/********************************/
+/*  Carousel					*/
+/********************************/
+.carousel-inner .slide-1, 
+.carousel-inner .slide-2, 
+.carousel-inner .slide-3 {
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.carousel-inner .slide-1 {
+    background-image: url(../img/slides/ciageser-silde-001.jpg);
+}
+.carousel-inner .slide-2 {
+    background-image: url(../img/slides/ciageser-silde-002.jpg);
+}
+.carousel-inner .slide-3 {
+    background-image: url(../img/slides/ciageser-silde-003.jpg);
+}
+
+.carousel-caption {
+    right: 0%;
+	top:15%;
+    bottom: inherit;
+    left: 10%;
+    z-index: 10;
+    padding-top: 20px;
+    text-align: left;
+	font-size: 1em;
+	width:75%;
+}
+.carousel-caption h1 {
+	font-size: 2.3em;
+	display: inline;
+	font-weight: bold;
+}
+
+.carousel-footer {
+    position:absolute;
+	bottom: 0px;
+    left: 0%;
+	width:100%;
+	padding:4px 0px 0px 10%;
+}
+.carousel-footer h6 {
+    color:white;
+	margin-bottom:4px;
+}
+.carousel-footer a, .carousel-footer a:hover, .carousel-footer a:active, .carousel-footer a:focus {
+    color:white;
+	text-decoration:none;
+}
+
+/* servicios-menu */ 
+
+.servicios-menu a, .servicios-menu a:active, .servicios-menu a:focus {
+    color:#575757;
+	text-decoration:none;
+	font-weight: bold;
+    display: block;	
+}
+.servicios-menu a:hover {
+    color:white;
+	background:black;
+}
+.servicios-menu li {
+    border-bottom:1px solid #ccc;
+}
+
+.saneamiento-info .servicios-menu a:hover { background:#54ab26; }
+.obras-info .servicios-menu a:hover { background:#a4c408; }
+.logistica-info .servicios-menu a:hover { background:#0086cb; }
+
+
+
+/********************************/
+/*  Carousel CLIENTES			*/
+/********************************/
+
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.customer-gallery .slick-slide {
+    margin: 0px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}

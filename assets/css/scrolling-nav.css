@@ -1,0 +1,144 @@
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+	color:#595959;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    padding: 0px 0 6px;
+	background: white;
+	border-bottom:1px solid #ddd;
+}
+
+.navbar-nav>li>a {
+    color: #595959;
+}
+
+.navbar-nav>li>a:hover, 
+.navbar-nav>li>a:focus {
+    color: #54ab26;
+}
+
+.navbar-brand {
+    padding: 3px 0px 0px;
+}
+
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 0px 0 6px;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.intro-section {
+    min-height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    /*background: #fff;*/
+}
+
+.about-section {
+    min-height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    /*background: #eee;*/
+}
+
+.services-section {
+    min-height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    /*background: #fff;*/
+    padding-bottom: 150px;
+}
+
+.contact-section {
+    min-height: 100%;
+    padding-top: 100px;
+    text-align: center;
+    background: #efefef;
+}
+
+#contactForm {
+    margin: 40px 0px 70px;
+}
+
+.floating-label-form-group {
+    position: relative;
+    margin: 0;
+    padding: 0em;
+    border-bottom: 1px solid #eee;
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+    z-index: 1;
+    position: relative;
+    padding: 10px 10px;
+    border: 0;
+    border-radius: 0;
+    font-size: 1.2em;
+    background: 0 0;
+    box-shadow: none!important;
+    resize: none;
+	background: white;
+	border:1px solid #ddd;
+	margin:0px;
+}
+
+.floating-label-form-group label {
+    display: none;
+    z-index: 0;
+    position: relative;
+    top: 2em;
+    margin: 0;
+    font-size: .85em;
+    line-height: 1.764705882em;
+    vertical-align: middle;
+    vertical-align: baseline;
+    opacity: 0;
+    -webkit-transition: top .3s ease,opacity .3s ease;
+    -moz-transition: top .3s ease,opacity .3s ease;
+    -ms-transition: top .3s ease,opacity .3s ease;
+    transition: top .3s ease,opacity .3s ease;
+}
+
+.floating-label-form-group::not(:first-child) {
+    padding-left: 14px;
+    border-left: 1px solid #eee;
+}
+
+.floating-label-form-group-with-value label {
+    top: 0;
+    opacity: 1;
+}
+
+.floating-label-form-group-with-focus label {
+    color: #18bc9c;
+}
+
+form .row:first-child .floating-label-form-group {
+    border-top: 1px solid #eee;
+}

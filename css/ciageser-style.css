@@ -1,0 +1,318 @@
+/*!
+ * Base Bootstrap 
+ * Copyright 2019 Ciageser
+ */
+
+ /*
+html {
+  position: relative;
+  min-height: 100%;
+}
+*/
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  padding-top: 56px;  
+}
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-default .navbar-toggle {
+    background-color: black;
+}
+
+.navbar {
+	padding:0px;
+	top:24px;
+}
+
+#otras-habilitaciones {
+    border-left:1px solid #999;
+}
+
+
+/********************************/
+/*          Carousel  			*/
+/********************************/
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+
+
+/********************************/
+/*          Top     			*/
+/********************************/
+
+#top-bar  {
+    background: #575757;
+}
+
+#top-bar  p {
+    color:white;
+    padding: 4px 0px;
+	font-size:.85em;
+    margin: 0px 15px 0px 0px;	
+}
+
+
+/********************************/
+/*  Ciagaser-carpeta-servicios	*/
+/********************************/
+#Ciagaser-carpeta-servicios {
+    background: transparent url("../img/ciageser-fondo-01.jpg") top center no-repeat fixed;
+    position: relative;
+	padding:90px 0px;
+}
+#Ciagaser-carpeta-servicios h1,
+#Ciagaser-carpeta-servicios p{
+    color:white;
+}
+#Ciagaser-carpeta-servicios h1 {
+    margin-bottom:40px;
+}
+
+/********************************/
+/*  Buton						*/
+/********************************/
+.btn-success {
+    background-color: #215f00;
+    border-color: #1d5300;
+}
+.btn-success {
+    background-color: #215f00;
+    border-color: #1d5300;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open>.dropdown-toggle.btn-success {
+    background-color: #113200;
+    border-color: #113200;
+}
+
+/********************************/
+/*  Footer						*/
+/********************************/
+#footer {
+    padding: 50px 0px 10px;
+    background-color: #262626;
+}
+
+#footer ul#footer-menu li {
+    text-align: left;
+    padding-left: 15px;
+    border-bottom: 1px solid #666666;
+}
+
+#footer h5 {
+    color: #fff;
+	margin-bottom:25px;
+	padding-bottom:15px;
+	border-bottom:1px solid #333;
+}
+
+#footer li a {
+    color: #999999;
+	padding: 8px 0;
+	display:block;
+}
+#footer li a:hover {
+    color: #ffffff;
+	text-decoration:none;
+}
+#footer li {
+    color: white;
+}
+
+#footer-copyright {
+    /*padding: 5px 0px;*/
+    background-color: #000000;
+	color: #999999;
+	font-size:.8em;
+}
+/*
+#footer-copyright p {
+    margin: 4px 0px;
+}
+*/
+
+
+/********************************/
+/*  Glyphicon			    	*/
+/********************************/
+#contacto .glyphicon {
+    margin: 30px 0px 15px;
+    font-size: 30px;
+	color:#999;
+    background: white;
+    padding: 30px;
+    border-radius: 80px;
+}
+
+.telefonos-contacto-seccion .glyphicon {
+    font-size: 25px;
+	color:#bababa;
+}
+
+.telefonos-contacto-seccion  {
+    padding: 30px 0px;
+}
+.telefonos-contacto-seccion  p {
+    font-size:1.2em;
+}
+
+/********************************/
+/*  Ciageser "valorando el futuro" */
+/********************************/
+
+.ciageser-seccion {
+    background: transparent url("../img/ciageser-info-021.jpg") top center no-repeat fixed;
+    position: relative;
+	padding:80px 0px;
+}
+.ciageser-seccion h1 {
+    color:white;
+}
+
+/*  Fondo negro transparente   	*/
+.background-black-transparent {
+    background-color: #000000;
+    opacity: 0.6;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+
+.Ciagaser-carpeta-servicios {
+    background: transparent url(../img/ciageser-info-021.jpg) top left no-repeat fixed;
+    position: relative;
+    padding: 80px 0px;
+}
+
+/********************************/
+/*  Servicios  					*/
+/********************************/
+.servicios-inicio-seccion h1 {
+	margin-bottom:50px;
+}
+
+.servicios-inicio-seccion {
+	padding:80px 0px;
+}
+
+.servicios-inicio-seccion img{
+	margin:auto;
+	width:40%;
+}
+
+.servicios-inicio-seccion p {
+	font-size:1.2em;
+	margin:30px 0px;
+}
+
+.servicios-inicio-seccion .saneamiento-info h3{
+    padding-bottom: 30px;
+    border-bottom: 10px solid #54ab26;
+}
+.servicios-inicio-seccion .logistica-info h3{
+    padding-bottom: 30px;
+    border-bottom: 10px solid #0086cb;
+}
+.servicios-inicio-seccion .obras-info h3{
+    padding-bottom: 30px;
+    border-bottom: 10px solid #a4c408;
+}
+#saneamiento,
+.bg-saneamiento img {
+    border-top:10px solid #54ab26;
+}
+#logistica,
+.bg-logistica img {
+    border-top:10px solid #0086cb;
+}
+#obras, 
+.bg-obras img {
+    border-top:10px solid #a4c408;
+}
+
+#gestion-de-residuos.servicios-info {
+	padding-top:0px;
+}
+
+#gestion-de-residuos.servicios-info h1 {
+	padding-top:0px;
+}
+
+.servicios-info h1,
+.habilitaciones-info h1,
+.clientes-info h1 {
+	padding:20px 0px 60px 0px;
+}
+/*
+.servicios-info h1,
+.servicios-info h4 {
+	color:white;
+}
+*/
+.servicios-info,
+.clientes-info {
+	border-top:1px solid #ccc;
+}
+
+.servicios-info,
+.habilitaciones-info,
+.clientes-info {
+	padding:60px 0px;
+}
+
+.servicios-info .thumbnail{
+	background-color:transparent;
+	border: none;
+}
+
+.no-padding [class*="col-"] {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+  }
+
+.carousel-gallery-info {
+	padding:60px 0px 20px;
+}
+
+#servicios{
+	background-color:#efefef;
+}
+
+#residuos-solidos-urbanos .nav-tabs>li>a {
+    color: #54ab26;
+}
+
+#residuos-solidos-urbanos .nav-tabs>li.active>a {
+    color: #000;
+}
+.alert-success,
+#residuos-solidos-urbanos .alert-success {
+    background-color: #54ab26;
+    border-color: #54ab26;
+}
+
+#transporte-cargas-generales.alert-info {
+    background-color: #0086cb;
+    border-color: #0086cb;
+}

@@ -1,0 +1,280 @@
+/*
+Fade content bs-carousel with hero headers
+Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+Image credits: unsplash.com
+*/
+
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+#bs-carousel.fade-carousel {
+    position: relative;
+    height: 100vh;
+}
+#bs-carousel.fade-carousel .carousel-inner .item {
+    height: 100vh;
+}
+#bs-carousel.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #54ab26;
+    border-color: #54ab26;
+    opacity: .7;
+}
+#bs-carousel.fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    z-index: 3;
+    color: #fff;
+    text-align: left;
+    /*text-transform: uppercase;*/
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 2.7em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+#bs-carousel.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+#bs-carousel.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
+/********************************/
+/*            Overlay           */
+/********************************/
+#bs-carousel.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: .2;
+}
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {padding: 10px 20px;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #ffffff;
+    background-color: transparent;
+    border-color: #aaaaaa;
+    outline: none;
+    margin: 10px auto;
+}
+
+.btn.btn-hero:hover {
+    border-color: #ffffff;
+}
+
+.btn.btn-saneamiento,
+.btn.btn-saneamiento:hover,
+.btn.btn-saneamiento:focus {
+    background-color: #54ab26;
+    border-color: #54ab26;
+}
+.btn.btn-logistica,
+.btn.btn-logistica:hover,
+.btn.btn-logistica:focus  {
+    background-color: #0086cb;
+    border-color: #0086cb;
+}
+.btn.btn-obras,
+.btn.btn-obras:hover,
+.btn.btn-obras:focus  {
+    background-color: #a4c408;
+    border-color: #a4c408;
+}
+
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+#bs-carousel.fade-carousel .slides .slide-1, 
+#bs-carousel.fade-carousel .slides .slide-2,
+#bs-carousel.fade-carousel .slides .slide-3 {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#bs-carousel.fade-carousel .slides .slide-1 {
+  background-image: url(../img/slides/ciageser-silde-001.jpg); 
+}
+#bs-carousel.fade-carousel .slides .slide-2 {
+  background-image: url(../img/slides/ciageser-silde-002.jpg); 
+}
+#bs-carousel.fade-carousel .slides .slide-3 {
+  background-image: url(../img/slides/ciageser-silde-003.jpg); 
+}
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }    
+}
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 2em; }    
+
+	.hero {
+		top: 50%;
+		left: 50%;
+		z-index: 3;
+		text-align: center;
+	}
+}
+	
+/********************************/
+/*          Carousel Styles     */
+/********************************/
+
+#bs-carousel .carousel-indicators .active {
+    background-color: #2980b9;
+}
+
+#bs-carousel .carousel-inner img {
+    width: 100%;
+    max-height: 460px
+}
+
+#bs-carousel .carousel-control {
+    width: 0;
+}
+
+#bs-carousel .carousel-control.left,
+#bs-carousel .carousel-control.right {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	background-image: none;
+	background-repeat: no-repeat;
+	text-shadow: none;
+	margin-top:60px;
+}
+
+#bs-carousel .carousel-control.left span {
+	padding: 15px;
+}
+
+#bs-carousel .carousel-control.right span {
+	padding: 15px;
+}
+
+#bs-carousel .carousel-control .glyphicon-chevron-left, 
+#bs-carousel .carousel-control .glyphicon-chevron-right, 
+#bs-carousel .carousel-control .icon-prev, 
+#bs-carousel .carousel-control .icon-next {
+	position: absolute;
+	top: 45%;
+	z-index: 5;
+	display: inline-block;
+}
+
+#bs-carousel .carousel-control .glyphicon-chevron-left,
+#bs-carousel .carousel-control .icon-prev {
+	left: 0;
+}
+
+#bs-carousel .carousel-control .glyphicon-chevron-right,
+#bs-carousel .carousel-control .icon-next {
+	right: 0;
+}
+
+#bs-carousel .carousel-control.left span,
+#bs-carousel .carousel-control.right span {
+	/*background-color: #000;*/
+	font-size:25px;
+}
+
+#bs-carousel .carousel-control.left span:hover,
+#bs-carousel .carousel-control.right span:hover {
+	opacity: .7;
+	filter: alpha(opacity=70);
+}
+
+#bs-carousel .carousel-control.right {
+	top: 110px;
+	right: 60px;
+}
+#bs-carousel .carousel-control.left {
+	top: 110px;
+	left: 60px;
+}
+
+ 
+
+/****************************************************************/
+/*         CLIENTES Carousel      								*/
+/****************************************************************/
+
+
+#ciageser-clientes-carousel .carousel-control.left, #ciageser-clientes-carousel .carousel-control.right {
+	background-image:none;
+}
+#ciageser-clientes-carousel .carousel-control.left {
+	left: -75px;;
+}
+#ciageser-clientes-carousel .carousel-control.right  {
+	right: -75px;
+}
+
+#ciageser-clientes-carousel .img-responsive{ width:100%; height:auto; }
+
+@media (min-width: 992px ) {
+	#ciageser-clientes-carousel .carousel-inner .active.left { left: -25%; }
+	#ciageser-clientes-carousel .carousel-inner .next { left:  25%; }
+	#ciageser-clientes-carousel .carousel-inner .prev { left: -25%; }
+}
+
+@media (min-width: 768px) and (max-width: 991px ) {
+	#ciageser-clientes-carousel .carousel-inner .active.left { left: -33.3%; }
+	#ciageser-clientes-carousel .carousel-inner .next { left:  33.3%; }
+	#ciageser-clientes-carousel .carousel-inner .prev { left: -33.3%; }
+	#ciageser-clientes-carousel .active > div:first-child { display:block; }
+	#ciageser-clientes-carousel .active > div:first-child + div { display:block; }
+	#ciageser-clientes-carousel .active > div:last-child { display:none; }
+}
+
+@media (max-width: 767px) {
+	#ciageser-clientes-carousel .carousel-inner .active.left { left: -100%; }
+	#ciageser-clientes-carousel .carousel-inner .next { left:  100%; }
+	#ciageser-clientes-carousel .carousel-inner .prev { left: -100%; }
+	#ciageser-clientes-carousel .active > div { display:none;	}
+	#ciageser-clientes-carousel .active > div:first-child { display:block; }
+}
+
+
+
+
+
